@@ -1,4 +1,7 @@
 "use strict";
+
+$(document).ready(function() {
+
 var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
 var cList = $('ul.mylist')
 $.each(countries, function(i)
@@ -11,8 +14,17 @@ $.each(countries, function(i)
         .addClass('ui-all')
         .text(countries[i])
         .appendTo(li);
+
 });
 
+    var list = '<ul>';
+    for (var i = 0; i < 10; i++) {
+        list += '<li>something</li>';
+    }
+    list += '</ul>';
+    $('#details').append(list);
+
+});
 
 
 
