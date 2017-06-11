@@ -16,7 +16,7 @@ $.each(countries, function(i)
         .appendTo(li);
 
 });
-
+    $("div.mylist").append(list);
 
 });
 
