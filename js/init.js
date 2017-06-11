@@ -4,8 +4,7 @@ $(document).ready(function() {
 
 var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
 var cList = $('ul.mylist');
-    $('<ul/>');
-    var list =$('<ul/>');
+var list =$('<ul/>');
 $.each(countries, function(i)
 {
     var li = $('<li/>')
