@@ -3,7 +3,6 @@
 $(document).ready(function() {
 
 var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
-var cList = $('ul.mylist');
 var list =$('<ul/>');
 $.each(countries, function(i)
 {
