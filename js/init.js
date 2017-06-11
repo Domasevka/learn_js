@@ -9,7 +9,7 @@ $.each(countries, function(i)
     var li = $('<li/>')
         .addClass('ui-menu-item')
         .attr('role', 'menuitem')
-        .appendTo(cList);
+        .appendTo(list);
     var aaa = $('<a/>')
         .addClass('ui-all')
         .text(countries[i])
