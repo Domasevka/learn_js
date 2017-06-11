@@ -3,7 +3,9 @@
 $(document).ready(function() {
 
 var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
-var cList = $('ul.mylist')
+var cList = $('ul.mylist');
+    $('<ul/>');
+    var list =$('<ul/>');
 $.each(countries, function(i)
 {
     var li = $('<li/>')
@@ -17,12 +19,6 @@ $.each(countries, function(i)
 
 });
 
-    var list = '<ul>';
-    for (var i = 0; i < 10; i++) {
-        list += '<li>something</li>';
-    }
-    list += '</ul>';
-    $('#details').append(list);
 
 });
 
