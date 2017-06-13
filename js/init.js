@@ -16,11 +16,11 @@ $.each(countries, function(i)
         .appendTo(li);
 
 });
-    $("div.mylist").append(list);
+
 
     $( "#target" ).on('click', function(e) {
         e.preventDefault();
-        alert( "Привет" );
+        $("div.mylist").append(list);
     });
 
 });
