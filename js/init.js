@@ -18,8 +18,12 @@ $.each(countries, function(i)
 });
     $("div.mylist").append(list);
 
-});
+    $( "#target" ).on('click', function(e) {
+        e.preventDefault();
+        alert( "Привет" );
+    });
 
+});
 
 
 
