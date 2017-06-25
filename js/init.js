@@ -5,6 +5,9 @@ $(document).ready(function() {
     $( "#target" ).on('click', function(e) {
         e.preventDefault();
 
+    if ($('ul').length) {
+        alert("Привет");
+    } else {
         var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
         var list =$('<ul/>');
         $.each(countries, function(i)
@@ -19,6 +22,7 @@ $(document).ready(function() {
                 .appendTo(item);
         });
         $("div.mylist").append(list);
+    }
     });
 });
 
