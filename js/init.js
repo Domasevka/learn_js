@@ -2,27 +2,32 @@
 
 $(document).ready(function() {
 
-var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
-var list =$('<ul/>');
-$.each(countries, function(i)
-{
-    var li = $('<li/>')
-        .addClass('ui-menu-item')
-        .attr('role', 'menuitem')
-        .appendTo(list);
-    var aaa = $('<a/>')
-        .addClass('ui-all')
-        .text(countries[i])
-        .appendTo(li);
-
-});
-    $("div.mylist").append(list);
-
     $( "#target" ).on('click', function(e) {
         e.preventDefault();
-        alert( "Привет" );
-    });
+        function addList(){
+            var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
+            var list =$('<ul/>')
+                .addClass('list');
+            $.each(countries, function(i)
+            {
+                var item = $('<li/>')
+                    .addClass('list__item')
+                    .attr('role', 'menuitem')
+                    .appendTo(list);
+                var link = $('<a/>')
+                    .addClass('list__link')
+                    .text(countries[i])
+                    .appendTo(item);
+            });
+            $("div.mylist").append(list);
+        };
 
+    if ($('ul.list').length) {
+        alert("Привет");
+    } else {
+        addList();
+    }
+    });
 });
 
 
