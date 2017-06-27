@@ -4,12 +4,7 @@ $(document).ready(function() {
 
     $( "#target" ).on('click', function(e) {
         e.preventDefault();
-
-    if ($('ul.list').length) {
-        alert("Привет");
-
-    } else {
-        $(function(){
+        function addList(){
             var countries = ['United States', 'Canada', 'Argentina', 'Armenia'];
             var list =$('<ul/>')
                 .addClass('list');
@@ -25,8 +20,12 @@ $(document).ready(function() {
                     .appendTo(item);
             });
             $("div.mylist").append(list);
-        });
+        };
 
+    if ($('ul.list').length) {
+        alert("Привет");
+    } else {
+        addList();
     }
     });
 });
